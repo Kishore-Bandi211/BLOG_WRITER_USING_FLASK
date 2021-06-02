@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>EDIT POST</title>
+{% endblock %}
+{% block body %}
+<br>
+    <h1 class=" bg-secondary float-center text-white" style="text-align:center" >New Post</h1>
+
+<hr>
+
+<!-- <h2 class="bg-warning">
+    Create New Blog Post:
+</h2> -->
+<form action="/posts" method='POST' class="bg-light">
+
+    <h2><span class="badge bg-secondary">Title:</span></h2>
+<!-- <h2 class="badge  bg-primary p-10"></h2> -->
+
+    <!-- <label for="exampleFormControlTextarea1 " class="bg-success"></label> -->
+
+    <input class="form-control  bg-info text-white" type="text" name='title' id='title' placeholder="Enter title" aria-label="Enter title">
+
+
+    <br>
+    <h2><span class="badge bg-secondary">Author:</span></h2>
+
+    <input class="form-control bg-info text-white" type="text" name='author' id='author' name='title' id='title' placeholder="Enter Author"
+        aria-label="Enter Author">
+
+    <br>
+
+    <h2><span class="badge bg-secondary">Post:</span></h2>
+    <textarea class="form-control  bg-info text-white" name='content' id='content' placeholder="Enter Content" aria-label="Enter Content"
+        rows="3"></textarea>
+
+
+    <br>
+
+    <input type="submit" class="bg-success text-white btn" value='Post'>
+    <br>
+</form>
+<hr>
+{% endblock %}

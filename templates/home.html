@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+<br>
+
+<div>
+    <nav class="navbar navbar-dark bg-info" aria-label="First navbar example">
+        <div class="container-fluid">
+            <button class="btn btn-primary"><a href="/signup" class="btn btn-primary"> Sign Up</a></button>
+            <button class="btn btn-primary"><a href="/login" class="btn btn-primary"> Sign In</a>
+
+            </button>
+        </div>
+    </nav>
+    <br>
+</div>
+<div class="bg-success text-white ">
+    <h1 style="text-align:center" class="float-center mx-auto" >All Posts</h1>
+
+    <!-- <a href="/posts/new" style="display:inline;float: right" class="btn btn-success float-right">+new post</a> -->
+</div>
+<br>
+<hr>
+
+{% for post in posts %}
+
+<div class="card">
+    <div class="card-header blockquote bg-primary text-white">
+        {{post.title}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title text-success" >Written By: {{post.author}} on {{post.date_posted}}</h5>
+        <h5 class="card-text bg-light text-secondary" >{{post.content}}</h5>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+</div>
+<hr>
+<br>
+{%endfor %}
+{% endblock %}

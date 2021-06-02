@@ -1,0 +1,141 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Home</title>
+ {% endblock %}
+{% block body %}
+<br>
+<div>
+    <nav class="navbar navbar-dark bg-light container-fluid" aria-label="First navbar example">
+        <div class="container-fluid">
+            <button class="btn btn-primary bg-secondary" ><a href="/signup" class = "btn  bg-secondary text-white"> Sign Up</a></button>
+            <button class="btn btn-primary bg-secondary"  ><a href="/login" class = "btn bg-secondary text-white"> Sign In</a>
+               
+            </button>
+        </div>
+    </nav>
+     <br>   
+    <!-- <h1>Home Page</h1> -->
+      <div class="bg-warning p-5 rounded container-fluid">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome to the Blog world. Create your own blogs and have fun :) </p>
+            <p>Go visit our website and write down your freaky moments and make people go crazy with your blogs.</p>
+            <p>
+                <a class="btn btn-primary" href="/home" role="button">GO to Posts
+                    &raquo;</a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2" class="bg-dark"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3" class="bg-dark"></button>
+    </div>
+    <br>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="https://cupofjo.com/"><img src="https://stream-seo.com/wp-content/uploads/2019/01/best-lifestyle-blogs-a-cup-of-jo-700x356.jpg"
+                class="d-block w-100" alt="cup of jo">
+</a>
+        </div>
+        <div class="carousel-item"><a href="http://www.cocosteaparty.com/">
+                    <img src="https://www.vuelio.com/uk/wp-content/uploads/2017/10/vuelio-top-10-lifestyle-blog-ranking-cocosteaparty.jpg"
+                        class="d-block w-100" alt="coco's tea party">
+
+        </a>
+        </div>
+        <div class="carousel-item">
+            <a href="http://www.foreveramber.co.uk/">
+                        <img src="https://www.vuelio.com/uk/wp-content/uploads/2017/10/vuelio-top-10-lifestyle-blog-ranking-foreveramber.jpg"
+                            class="d-block w-100" alt="Forever Amber">
+</a>
+        </div>
+    </div>
+    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon btn-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+<footer class="text-center text-white" style="background-color: #caced1;">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Section: Images -->
+        <section class="">
+            <div class="row">
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/111.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/112.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/114.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/115.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                        <img src="https://mdbootstrap.com/img/new/fluid/city/116.jpg" class="w-100" />
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+{% endblock %}

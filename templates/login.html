@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sign in</title>
+<link rel="stylesheet" href="../static/css/login.css">
+{% endblock %}
+{% block body %}
+
+<br><br><br>
+
+<form action="/logincheck" method="post" class="bg-light" >
+    <div class="col-auto mb-3 align-items-center">
+            <h1 class=" bg-secondary float-center text-white py-2" style="text-align:center">LOGIN FORM</h1>
+
+            <hr>
+
+        <!-- <h2><span class="badge bg-secondary">LOGIN FORM</span></h2> -->
+    </div>
+    
+
+    <div class="mb-3">
+            <h3><span class="badge bg-secondary">Email address</span></h3>
+
+        <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+        <input type="email" class="form-control fl" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+                    <h3><span class="badge bg-secondary">Password</span></h3>
+        <!-- <label for="exampleInputPassword1" class="form-label">Password
+</label> -->
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+    </div>
+    <div><button type="submit" class="btn btn-primary">LOGIN</button>
+</div>
+<br>
+
+<div class="row g-3 align-items-center">
+    <div class="col-auto">
+        <label class="col-form-label text-danger">don't have an account?</label>
+    </div>
+    <div class="col-auto">
+        <button class="form-control btn btn-success text-white" aria-describedby="passwordHelpInline"> <a class = "btn text-white" href="/signup">Sign Up</a></button>
+    </div>
+    <!-- <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+            Must be 8-20 characters long.
+        </span>
+    </div> -->
+</div>
+       
+</form>
+
+
+{% endblock %}

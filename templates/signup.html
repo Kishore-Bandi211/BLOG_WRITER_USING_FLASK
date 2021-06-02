@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Sign up</title>
+<link rel="stylesheet" href="../static/css/login.css">
+{% endblock %}
+{% block body %}
+
+<br>
+
+<form action="/register" method="post">
+    <div class="col-auto mb-3 align-items-center">
+                    <h1 class=" bg-secondary float-center text-white py-2" style="text-align:center">SIGN UP FORM</h1>
+<hr>
+        <!-- <h2><span class="badge bg-secondary">SIGN UP FORM</span></h2> -->
+    </div>
+
+
+    <div class="mb-3">
+            <h3><span class="badge bg-secondary">Email address</span></h3>
+        <input type="email" class="form-control fl" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+                    <h3><span class="badge bg-secondary">Password</span></h3>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+    </div>
+    <div class="mb-3">
+                            <h3><span class="badge bg-secondary"> Re-Enter Password</span></h3>
+
+        <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Re-enter password">
+    </div>
+    <div><button type="submit" class="btn btn-primary">SUBMIT</button>
+    </div>
+    <br>
+
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+            <label class="col-form-label text-primary">Already have an account?</label>
+        </div>
+        <div class="col-auto">
+            <button class="form-control btn btn-success text-white" aria-describedby="passwordHelpInline"> <a
+                    class="btn text-white" href="/login">Sign In</a></button>
+        </div>
+        <!-- <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+            Must be 8-20 characters long.
+        </span>
+    </div> -->
+    </div>
+
+</form>
+
+
+{% endblock %}

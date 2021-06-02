@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>EDIT POST</title>
+{% endblock %}
+{% block body %}
+
+<hr>
+
+    <h1 class=" bg-secondary float-center text-white" style="text-align:center">Edit Post</h1>
+
+    <br>
+    <hr>
+
+<form action="/posts/edit/{{post.id}}" method='POST' class="bg-light">
+    <h2><span class="badge bg-secondary">Title:</span></h2>
+
+    <input class="form-control" type="text" name='title' id='title' value="{{post.title}}" aria-label="Enter title">
+
+
+    <br>
+        <h2><span class="badge bg-secondary">Author:</span></h2>
+
+
+    <input class="form-control" type="text" name='author' id='author' name='title' id='title' value="{{post.author}}
+        "Enter Author">
+
+    <br>
+
+    <h2><span class="badge bg-secondary">Post:</span></h2>
+    <textarea class="form-control" name='content' id='content' aria-label="Enter Content"
+        rows="3">{{post.content}}</textarea>
+
+
+    <br>
+
+    <input type="submit" class="btn btn-success text-white" value='Save'>
+    <br>
+</form>
+</hr>
+{% endblock %}
